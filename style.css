@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Navigation Bar */
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    font-family: "Montserrat";
+    top: 0px;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+/* Logo and Image */
+
+#logo {
+    margin: 10px 34px;
+}
+
+#logo img {
+    height: 63px;
+    margin: 3px 6px;
+}
+
+/* List Styling */
+
+ul {
+    display: flex;
+}
+
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    color: white;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+/* Section Home */
+
+#home {
+    height: 540px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    background-image: url("bg.jpg");
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 0px;
+    left: 0px;
+    height: 85%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+#home h1 {
+    color: white;
+    text-align: center;
+    font-family: "Agbalumo";
+}
+
+#home p {
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: "Poppins";
+
+}
+
+/* Utility Classes */
+
+.h-primary {
+    font-size: 3.8rem;
+    padding: 12px;
+    font-family: "Poppins";
+}
+
+.h-secondary {
+    font-size: 2.3rem;
+    padding: 12px;
+}
+
+.btn {
+    padding: 6px 20px;
+    background-color: grey;
+    color: white;
+    border: 2px solid black;
+    margin: 18px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    font-family: "Poppins";
+}
+
+.center {
+    text-align: center;
+    font-family: "Poppins";
+
+}
+
+/* Services Section */
+
+#services {
+    margin: 34px;
+    display: flex;
+}
+
+#services .box {
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 23px;
+    background-color: rgb(227, 221, 221);
+    margin-bottom: 25px;
+
+}
+
+#services .box img {
+    height: 150px;
+    display: block;
+    margin: auto;
+}
+
+#services .box p {
+    font-family: "Poppins";
+}
+
+
+/* Clients Section */
+
+#client-section {
+    /* position: relative; */
+}
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    background: url("https://cmkt-image-prd.freetls.fastly.net/0.1.0/ps/6686472/1820/1213/m1/fpnw/wm1/inxo00aws6rrqosj5ag6jgp0bneta2mmfjznairni7mpyym0yekqinkzdcyx0re4-.jpg?1563236855&s=87b69f509ea30c0fcbbfaeb14f87ff6a");
+    height: 54%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clients img {
+    height: 125px;
+    cursor: pointer;
+}
+
+.client-item {
+    padding: 34px;
+}
+
+
+/* Contact Section */
+
+#contact {
+    position: relative;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url("https://png.pngtree.com/thumb_back/fw800/back_our/20190628/ourmid/pngtree-blue-background-with-geometric-forms-image_280879.jpg");
+    /* background-color: violet; */
+    object-fit: cover;
+    /* background-repeat: no-repeat ; */
+    /* background-position: center; */
+
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box form {
+    width: 40%;
+}
+
+#contact-box label {
+    font-size: 1.3rem;
+    font-family: "Poppins";
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+}
