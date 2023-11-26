@@ -155,7 +155,7 @@ ul {
 }
 
 #services .box img {
-    height: 150px;
+    height: 135px;
     display: block;
     margin: auto;
 }
@@ -167,9 +167,9 @@ ul {
 
 /* Clients Section */
 
-#client-section {
-    /* position: relative; */
-}
+/* #client-section {
+    position: relative;
+} */
 
 #client-section::before {
     content: "";
