@@ -23,12 +23,17 @@
     font-size: 13px;
     padding: 3px 28px;
     width: 300px;
+    margin-right: 12px;
+}
+
+#home h1{
+    margin-right: 12px;
 }
 
 
 /* Utility Classes */
 .h-primary{
-   font-size: 26px;
+   font-size: 28px;
 }
 
 
@@ -58,6 +63,7 @@
     font-size: 13px;
     padding: 4px 8px;
     width: 200px;
+    margin-right: 20px;
 }
 
 /* Contact box  */
